@@ -132,5 +132,6 @@ bash $SCRIPT/country-configs/ZA.sh
 sleep 0.5
 
 sudo chmod +x start
+sudo chmod +x firewall
 sudo cp $SCRIPT/firewall /usr/bin/
 #----------------------------------------------------
