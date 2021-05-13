@@ -1,4 +1,3 @@
-<img align="center" src="https://github.com/alegra8611/IPvanish-Installer/blob/main/images/3.png?raw=true">
 
 # IPvanish-Installer
 Tool built in bash to install ipvanish configs and run with kill switch.
