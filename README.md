@@ -1,6 +1,14 @@
 # IPvanish-Installer
 Tool built in bash to install ipvanish configs and run with kill switch.
 
+When selecting the country the tool will randomly select a config file to connect to.
+
+The tool will also randomly change ip addresses every 24 - 48 hours within the selected country (prompted for sudo password).
+
+Open to any new ideas.
+
+I also have a double hop switch for those who already have an existing vpn connection and wish to have a "second hop" capability.
+
 Requirements:
 -
 - An acitve IPvanish user account
