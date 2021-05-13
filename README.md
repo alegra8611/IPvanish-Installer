@@ -16,7 +16,5 @@ Install:
 
 Usage:
 -
-
-- sudo chmod +x start.sh
-- ./start.sh
+- ./start
 - Follow the prompts
