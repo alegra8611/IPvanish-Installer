@@ -22,5 +22,5 @@ Usage:
 Screenshots:
 -
 
-![alt text]https://github.com/alegra8611/IPvanish-Installer/blob/main/images/1.png
-![alt text]https://github.com/alegra8611/IPvanish-Installer/blob/main/images/2.png
+![alt text](https://github.com/alegra8611/IPvanish-Installer/blob/main/images/1.png?raw=true)
+![alt text](https://github.com/alegra8611/IPvanish-Installer/blob/main/images/2.png?raw=true)
