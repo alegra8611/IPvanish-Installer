@@ -28,6 +28,8 @@ Usage:
 - ./start
 - Follow the prompts
 
+**IMPORTANT:** don't run the script as root, you will be prompted for password
+
 Screenshots:
 -
 
