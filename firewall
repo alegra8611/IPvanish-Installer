@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+export BWHITE='\033[1;37m'
+
+sudo ufw --force reset &>/dev/null
+sudo ufw default deny incoming &>/dev/null
+sudo ufw default deny outgoing &>/dev/null
+sudo ufw allow out on tun-hop1 from any to any &>/dev/null
+sudo ufw allow in on tun-hop1 from any to any &>/dev/null
+sudo ufw allow out on usb0 to any port 53,1134 proto tcp &>/dev/null
+sudo ufw allow out on usb0 to any port 53,1134 proto tcp &>/dev/null
+sudo ufw allow out on wlan0 to any port 53,1134 proto tcp &>/dev/null
+sudo ufw allow from 10.8.0.0/14 to any port 22 &>/dev/null
+sudo ufw --force enable &>/dev/null
+
+
+echo ""
+echo -e ${BWHITE}"FIREWALL ON HOP-1 ENABLED!"
+
