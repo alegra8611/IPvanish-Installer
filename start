@@ -1,0 +1,661 @@
+#!/usr/bin/bash
+
+clear
+export DIR=~/IPvanish
+export YELLOW='\033[1;33m'
+export RED='\033[0;31m'
+export BRED='\033[1;31m'
+export CYAN='\033[0;36m'
+export GREEN='\033[1;32m'
+export BBLUE='\033[1;34m'
+export BWHITE='\033[1;37m'
+
+export switch=($(shuf -i 5400-10800 -n 1)) 
+
+echo -e ${BBLUE}"---------------------------------------------------------------------------------------------------------------------------------------------------------" 
+echo -e ${BWHITE}"              DMMMMMMD                                                                          DMMMMMMD  "                                                            
+echo -e ${BWHITE}"          MMMMMMMMMMMMMMMM                                                                   MMMMMMMMMMMMMMMM   "                                             
+echo -e ${BWHITE}"        MMMMMMMMMMMMMMMMMMMM                                                               MMMMMMMMMMMMMMMMMMMM      "       
+echo -e ${BWHITE}"       MMMMMMMMMMMMMMMMMMMMMM.                                                            MMMMMMMMMMMMMMMMMMMMMM.    "                       
+echo -e ${BWHITE}"      MMMMMMMMMMMMMMMMMMMMMMMMMM                                                        MMMMMMMMMMMMMMMMMMMMMMMMMM   "      
+echo -e ${BWHITE}"     MMMMMMMMMMMMMMMMMMMMMMMMMMMM                                                      MMMMMMMMMMMMMMMMMMMMMMMMMMMM  "      
+echo -e ${BWHITE}"    .MMMMMMMMMMMMMMMMMMMMMMMMMMMM                                                     .MMMMMMMMMMMMMMMMMMMMMMMMMMMM "
+echo -e ${BWHITE}"    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                                                    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM  "     
+echo -e ${BWHITE}"    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                                                    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM  "    
+echo -e ${BWHITE}"    MM+  MMMMMMMMMMMMMMMMMMMM$  MM                                                    MM+  MMMMMMMMMMMMMMMMMMMM$  MM   "
+echo -e ${BWHITE}"    +M.    ZMMMMMMMMMMMMMMO     M     ________     __  __                             +M.    ZMMMMMMMMMMMMMMO     M    "
+echo -e ${BWHITE}"     MM       MMMMMMMMMM       MM    /  _/ __ \   / / / /___  ____  ____  ___  _____   MM       MMMMMMMMMM       MM    "
+echo -e ${BWHITE}"    MMD         MMMM.        .MM     / // /_/ /  / /_/ / __ \/ __ \/ __ \/ _ \/ ___/  MMD         MMMM.        .MM     "
+echo -e ${BWHITE}"     MMMMMM    MMM=MMI   DMMMMM    _/ // ____/  / __  / /_/ / /_/ / /_/ /  __/ /       MMMMMM    MMM=MMI   DMMMMM       "
+echo -e ${BWHITE}"      MMMMMMMMMMM  +MMMMMMMMMMM   /___/_/      /_/ /_/\____/ .___/ .___/\___/_/         MMMMMMMMMMM  +MMMMMMMMMMM "
+echo -e ${BWHITE}"     MMMMMMMMMMM 8M MMMMMMMMMMMD                          /_/   /_/                    MMMMMMMMMMM 8M MMMMMMMMMMMD "
+echo -e ${BWHITE}"     MMMMM   MMM.MM MMMM    MMM                                                        MMMMM   MMM.MM MMMM    MMM "
+echo -e ${BWHITE}"      MMM7   MMMMMMMMMMM    M8           Author: Alegra_Punisher8611876                 MMM7   MMMMMMMMMMM    M8 "        
+echo -e ${BWHITE}"             MM MM M MMM                                                                       MM MM M MMM      "                                                               
+echo -e ${BWHITE}"             MM MM,M MM                                                                        MM MM,M MM      "         
+echo -e ${BWHITE}"             MM.MM=M MM                                                                        MM.MM=M MM		"
+echo -e ${BWHITE}"             MM~MM+M MM                                                                        MM~MM+M MM    "                                                               
+echo -e ${BWHITE}"             8M~MM+M MM                                                                        8M~MM+M MM   "            
+echo -e ${BWHITE}"             ,M~MMIM MM                                                                        ,M~MMIM MM  "              
+echo -e ${BWHITE}"              M:MMZM MM                                                                         M:MMZM MM  "                   
+echo -e ${BWHITE}"              M.MMIM MM                                                                         M.MMIM MM "
+echo -e ${BBLUE}"---------------------------------------------------------------------------------------------------------------------------------------------------------" 
+echo ""
+echo ""
+echo -e ${YELLOW}
+echo ""
+PS3=$'\e[0;32m Please Choose a Country: \e[0m' 
+Country=("America" "Argentina" "Australia" "Austria" "Belgium" "Brazil" "Bulgaria" "Canada" "Chile" "Colombia" "Croatia" "Cyprus" "Czech-Republic" "Denmark" "Estonia" "Finland" "France" "Germany" "Greece" "Hungary" "Iceland" "India" "Ireland" "Israel" "Italy" "Japan" "Korea" "Latvia" "Malaysia" "Mexico" "Moldova" "Netherlands" "New-Zealand" "Nigeria" "Norway" "Poland" "Portugal" "Romania" "Serbia" "Singapore" "Slovakia" "Slovenia" "South-Africa" "Spain" "Sweden" "Switzerland" "Taiwan" "UAE" "Ukraine" "United-Kingdom" )
+select vpn in "${Country[@]}"; do
+	case $vpn in
+
+		"America")
+			echo ""
+			echo -e ${BWHITE}"You selected America"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/America/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Argentina")
+			echo ""
+			echo -e ${BWHITE}"You selected Argentina"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Argentina/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Australia")
+			echo ""
+			echo -e ${BWHITE}"You selected Australia"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Australia/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Austria")
+			echo ""
+			echo -e ${BWHITE}"You selected Austria"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Austria/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Belgium")
+			echo ""
+			echo -e ${BWHITE}"You selected Belgium"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Belgium/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Brazil")
+			echo ""
+			echo -e ${BWHITE}"You selected Brazil"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Brazil/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Bulgaria")
+			echo ""
+			echo -e ${BWHITE} "You selected Bulgaria"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Bulgaria/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Canada")
+			echo ""
+			echo -e ${BWHITE} "You selected Canada"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Canada/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Chile")
+			echo ""
+			echo -e ${BWHITE}"You selected Chile"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Chile/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Colombia")
+			echo ""
+			echo -e ${BWHITE}"You selected Colombia"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Colombia/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Croatia")
+			echo ""
+			echo -e ${BWHITE}"You selected Croatia"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Croatia/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Cyprus")
+			echo ""
+			echo -e ${BWHITE}"You selected Cyprus"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Cyprus/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Czech-Republic")
+			echo ""
+			echo -e ${BWHITE}"You selected Czech-Republic"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Czech-Republic/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Denmark")
+			echo ""
+			echo -e ${BWHITE}"You selected Denmark"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Denmark/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Estonia")
+			echo ""
+			echo -e ${BWHITE}"You selected Estonia"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Estonia/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Finland")
+			echo ""
+			echo -e ${BWHITE}"You selected Finland"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Finland/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"France")
+			echo ""
+			echo -e ${BWHITE}"You selected France"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/France/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Germany")
+			echo ""
+			echo -e ${BWHITE}"You selected Germany"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Germany/configs/*.conf /etc/openvpn
+			
+			break
+			;;			
+
+		"Greece")
+			echo ""
+			echo -e ${BWHITE}"You selected Greece"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Greece/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Hungary")
+			echo ""
+			echo -e ${BWHITE}"You selected Hungary"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Hungary/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Iceland")
+			echo ""
+			echo -e ${BWHITE}"You selected Iceland"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Iceland/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"India")
+			echo ""
+			echo -e ${BWHITE}"You selected India"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/India/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Ireland")
+			echo ""
+			echo -e ${BWHITE}"You selected Ireland"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Ireland/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Israel")
+			echo ""
+			echo -e ${BWHITE}"You selected Israel"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Israel/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Italy")
+			echo ""
+			echo -e ${BWHITE}"You selected Italy"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Italy/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Japan")
+			echo ""
+			echo -e ${BWHITE}"You selected Japan"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Japan/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Korea")
+			echo ""
+			echo -e ${BWHITE}"You selected Korea"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Korea/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Latvia")
+			echo ""
+			echo -e ${BWHITE}"You selected Latvia"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Latvia/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Malaysia")
+			echo ""
+			echo -e ${BWHITE}"You selected Malaysia"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Malaysia/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Mexico")
+			echo ""
+			echo -e ${BWHITE}"You selected Mexico"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Mexico/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+
+		"Moldova")
+			echo ""
+			echo -e ${BWHITE}"You selected Moldova"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Moldova/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Netherlands")
+			echo ""
+			echo -e ${BWHITE}"You selected Netherlands"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Netherlands/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+
+		"New-Zealand")
+			echo ""
+			echo -e ${BWHITE}"You selected New-Zealand"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/New-Zealand/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Nigeria")
+			echo ""
+			echo -e ${BWHITE}"You selected Nigeria"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Nigeria/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Norway")
+			echo ""
+			echo -e ${BWHITE}"You selected Norway"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Norway/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Poland")
+			echo ""
+			echo -e ${BWHITE}"You selected Poland"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Poland/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Poland")
+			echo ""
+			echo -e ${BWHITE}"You selected Poland"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Poland/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Portugal")
+			echo ""
+			echo -e ${BWHITE}"You selected Portugal"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Portugal/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Romania")
+			echo ""
+			echo -e ${BWHITE}"You selected Romania"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Romania/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Serbia")
+			echo ""
+			echo -e ${BWHITE}"You selected Serbia"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Serbia/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Singapore")
+			echo ""
+			echo -e ${BWHITE}"You selected Singapore"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Singapore/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Slovakia")
+			echo ""
+			echo -e ${BWHITE}"You selected Slovakia"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Slovakia/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Slovenia")
+			echo ""
+			echo -e ${BWHITE}"You selected Slovenia"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Slovenia/configs/*.conf /etc/openvpn
+			
+			break
+			;;			
+
+		"South-Africa")
+			echo ""
+			echo -e ${BWHITE}"You selected South-Africa"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/South-Africa/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Spain")
+			echo ""
+			echo -e ${BWHITE}"You selected Spain"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Spain/configs/*.conf /etc/openvpn
+			
+			break
+			;;	
+
+		"Sweden")
+			echo ""
+			echo -e ${BWHITE}"You selected Sweden"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Sweden/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Switzerland")
+			echo ""
+			echo -e ${BWHITE}"You selected Switzerland"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Switzerland/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Taiwan")
+			echo ""
+			echo -e ${BWHITE}"You selected Taiwan"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Taiwan/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"UAE")
+			echo ""
+			echo -e ${BWHITE}"You selected UAE"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/UAE/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"Ukraine")
+			echo ""
+			echo -e ${BWHITE}"You selected Ukraine"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/Ukraine/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+		"United-Kingdom")
+			echo ""
+			echo -e ${BWHITE}"You selected United-Kingdom"
+			echo ""
+			echo -e ${GREEN}"Changing IP.........."
+			sudo cp $DIR/United-Kingdom/configs/*.conf /etc/openvpn
+			
+			break
+			;;
+
+
+		*) echo "Invalid Option";;
+	esac
+done
+
+trap "echo '' & echo '' & echo 'Please Wait Cleaning Up..........' & sudo rm -f /etc/openvpn/*.conf" EXIT
+
+echo ""
+echo -e ${YELLOW}
+
+PS3=$'\e[0;32m Would you like a kill switch enabled? \e[0m' 
+killswitch=("Yes" "No")
+select kill in "${killswitch[@]}"; do
+	case $kill in
+
+		"Yes")
+
+			sudo ufw --force reset &>/dev/null
+			sudo ufw default deny incoming &>/dev/null
+			sudo ufw default deny outgoing &>/dev/null
+			sudo ufw allow out on usb0 to any port 53,443 proto udp &>/dev/null 
+			sudo ufw allow out on eth0 to any port 53,443 proto udp &>/dev/null 
+			sudo ufw allow out on wlan0 to any port 53,443 proto udp &>/dev/null 
+			sudo ufw allow out on tun0 from any to any &>/dev/null 
+			sudo ufw allow in on tun0 from any to any &>/dev/null 
+			sudo ufw enable &>/dev/null
+			echo ""
+			echo -e ${BWHITE}"KILL SWITCH ENABLED!" 
+
+				while true; do
+					END=($(ls -lR /etc/openvpn/*.conf | wc -l))
+					change=($(shuf -i 1-"$END" -n 1))
+					sudo service openvpn@$change start
+					trap "echo '' & echo '' & echo 'Please Wait Cleaning Up..........' & echo '' & sudo service openvpn@$change stop & sudo ufw disable && sudo rm -f /etc/openvpn/*.conf" EXIT
+					sleep 5
+					ip=$(ip -4 addr show tun0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+					service=$(sudo service openvpn@$change status | grep openvpn@$change| cut -d@ -f2 | cut -d. -f1 | head -1)
+					RED='\033[0;31m'
+					CYAN='\033[0;36m'
+					echo ""
+					echo -e ${BBLUE}"---------------------------------------------------------------------------------------------------------------------------------------------------------"
+					echo ""
+					echo -e ${BWHITE}"IP Changed to:" ${BRED}"$ip" ${BWHITE}"On:" ${BRED}"$service"
+					echo ""
+					echo -e ${BBLUE}"---------------------------------------------------------------------------------------------------------------------------------------------------------" 
+					echo ""
+					echo -e ${GREEN} ""
+					sleep $switch
+					echo ""
+					echo -e ${GREEN}"Changing IP.........."
+					echo ""
+					sudo service openvpn@$change stop
+					sleep 5
+				done
+
+			break
+			;;
+
+		"No")
+				sudo ufw disable &>/dev/null
+				echo ""
+				echo -e ${BWHITE}"WARNING! KILL SWITCH NOT ENABLED" 			
+				while true; do
+					END=($(ls -lR /etc/openvpn/*.conf | wc -l))
+					change=($(shuf -i 1-"$END" -n 1))
+					sudo service openvpn@$change start
+					trap "echo '' & echo '' & echo 'Please Wait Cleaning Up..........' & sudo service openvpn@$change stop && sudo rm -f /etc/openvpn/*.conf" EXIT
+					sleep 5
+					ip=$(ip -4 addr show tun0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+					service=$(sudo service openvpn@$change status | grep openvpn@$change| cut -d@ -f2 | cut -d. -f1 | head -1)
+					RED='\033[0;31m'
+					CYAN='\033[0;36m'
+					echo ""
+					echo -e ${BBLUE}"---------------------------------------------------------------------------------------------------------------------------------------------------------"
+					echo ""
+					echo -e ${BWHITE}"IP Changed to:" ${BRED}"$ip" ${BWHITE}"On:" ${BRED}"$service"
+					echo ""
+					echo -e ${BBLUE}"---------------------------------------------------------------------------------------------------------------------------------------------------------" 
+					echo ""
+					echo -e ${GREEN} ""
+					sleep $switch
+					echo ""
+					echo -e ${GREEN}"Changing IP.........."
+					echo ""
+					sudo service openvpn@$change stop
+					sleep 5
+				done
+			break
+			;;
+		*) echo "Invalid Option";;
+	esac
+done
+
+trap "echo '' & echo '' & echo 'Please Wait Cleaning Up..........' & sudo service openvpn@$change stop && sudo rm -f /etc/openvpn/*.conf" EXIT
+
+
+
+
